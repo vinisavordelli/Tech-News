@@ -11,6 +11,7 @@ python3 -m venv .venv && source .venv/bin/activate
 ```
 
 Instale as dependências rodando o código abaixo.
+
 ```sh
 python3 -m pip install -r dev-requirements.txt
 ```
@@ -25,7 +26,7 @@ tech-news-analyzer
 
 Isso Abrirá um menu com opções do que você gostaria de fazer, como na imagem abaixo
 
-![Imagem do Menu](caminho para a imagem)
+![Imagem do Menu](Menu.png)
 
 ### As opções do menu
 
@@ -51,8 +52,6 @@ Busca no banco de dados qual a maior recorrência de categorias dos posts e reto
 
 Finaliza o Script.
 
-
 ### Principais Tecnologias utilizadas
 
- <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="70" height="70"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="70"/> </a>
-
+<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="70" height="70"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="70"/> </a>
