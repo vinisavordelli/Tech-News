@@ -14,4 +14,14 @@ def top_5_news():
 
 # Requisito 11
 def top_5_categories():
-    """Seu código deve vir aqui"""
+    categories_occurrences_count = list(
+        get_collection().aggregate(
+            [
+                {"$group": {"_id": "$category", "count": {"$sum": 1}}},
+                {"$sort": {"count": -1, "_id": 1}},
+                {"$limit": 5},
+                {"$project": {"_id": 0, "name": "$_id"}},
+            ]
+        )
+    )
+    return [category["name"] for category in categories_occurrences_count]
