@@ -1,6 +1,24 @@
+import requests
+from time import sleep
+from http import HTTPStatus
+
+
 # Requisito 1
 def fetch(url):
-    """Seu código deve vir aqui"""
+    try:
+        response = requests.get(
+            url, timeout=3, headers={"user-agent": "Fake user-agent"}
+        )
+
+        if response.status_code == HTTPStatus.OK:
+            return response.text
+        else:
+            return None
+    except Exception as e:
+        print(e)
+        return None
+    finally:
+        sleep(1)
 
 
 # Requisito 2
